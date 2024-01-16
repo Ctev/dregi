@@ -21,8 +21,8 @@ window.onload = function()
 
 	for (var i = 0; i < 31; i++) 
 	{
-    	var audio = "audios/" + i + ".mp3";
-    	audioTracks.push(audio);
+    		var audio = "audios/" + i + ".mp3";
+    		audioTracks.push(audio);
 	}
 	//*/
 
@@ -45,15 +45,15 @@ window.onload = function()
 
 	video.ontimeupdate = function() {
   		if (video.currentTime >= 45 && video.currentTime <= 48) {
-    		audio.pause();
-    		// Если ты хочешь включить другую звуковую дорожку
-    		//audio.src = "new_audio.mp3";
-    		//audio.play();
+    			audio.pause();
+    			// Если ты хочешь включить другую звуковую дорожку
+    			//audio.src = "new_audio.mp3";
+    			//audio.play();
 
-    		video.muted = false;
+    			video.muted = false;
 
-    		// Или если ты хочешь использовать звук из видео
-    		// video.muted = true; // Если видео должно быть без звука, или false, если должен быть звук
+    			// Или если ты хочешь использовать звук из видео
+    			// video.muted = true; // Если видео должно быть без звука, или false, если должен быть звук
   		}
   		else {
   			audio.play();
